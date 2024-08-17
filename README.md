@@ -97,8 +97,11 @@
 
 Вместо хеша последнего коммита можно написать слово HEAD — Git вас поймёт.
 
-```
-mermaid
-graph TD;
-	A-->B;
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
 ```
