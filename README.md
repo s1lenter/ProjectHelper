@@ -97,12 +97,11 @@
 
 Вместо хеша последнего коммита можно написать слово HEAD — Git вас поймёт.
 
+# Схема жизненного цикла файлов в Git
+
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
   modified -- "git add" --> staged;
   staged    -- "git commit"     --> tracked/comitted -- "Изменения" --> modified;
-
-%% стрелка без текста для примера: 
-  A --> B;
 ```
